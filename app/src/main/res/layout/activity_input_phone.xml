@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark.InputPhoneActivity"
+    android:background="#c9c9c9">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#70b8e2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="電話號碼"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_arrow"
+            android:onClick="onBackClick" />
+    </FrameLayout>
+
+    <EditText
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:inputType="phone"
+        android:ems="3"
+        android:id="@+id/editUserPhone1"
+        android:layout_gravity="left"
+        android:background="#ffffff"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="5dp" />
+
+    <EditText
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:inputType="phone"
+        android:ems="8"
+        android:id="@+id/editUserPhone2"
+        android:layout_gravity="right"
+        android:background="#ffffff"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="5dp" />
+</FrameLayout>

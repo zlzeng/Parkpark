@@ -1,0 +1,671 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark.DetailActivity">
+
+    <fragment android:name="com.example.zz.parkpark.TitleFragment"
+        android:id="@+id/detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/detail_title"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pic2"/>
+
+        <TextView
+            android:id="@+id/detail_address"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="142dp"
+            android:textSize="23dp"
+            android:layout_marginTop="39dp" />
+
+        <TextView
+            android:id="@+id/detail_num"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="142dp"
+            android:layout_below="@+id/detail_address"
+            android:layout_marginTop="2dp"
+            android:text="剩餘車位:20"
+            android:textSize="21dp"
+            android:textColor="#70b8e2"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="260dp"
+        android:layout_below="@+id/detail_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:id="@+id/type_hour_card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:layout_alignParentTop="true"
+            android:onClick="onPickUpDate">
+
+            <ImageView
+                android:id="@+id/detail_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/calendar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="租用日期"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/detail_icon1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3月2日"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/date" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bar"
+            android:layout_alignParentTop="true"
+            android:onClick="onPickUpTime"
+            android:id="@+id/startTime">
+
+            <ImageView
+                android:id="@+id/detail_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/alarm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="開始時間"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/detail_icon2"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9:00"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/start_time" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bar"
+            android:layout_alignParentTop="true"
+            android:onClick="onPickUpTime"
+            android:id="@+id/endTime">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/alarm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="結束時間"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/imageView6"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="11:00"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/end_time" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="150dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/detail_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/tags"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="時租價格"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/detail_icon3"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20HKD"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/price" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="200dp"
+            android:onClick="onCalculateClick">
+
+            <ImageView
+                android:id="@+id/detail_icon5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/group"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="總價"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/detail_icon5"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="40HKD"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/price_sum" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="210dp"
+        android:layout_below="@+id/detail_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:id="@+id/type_day_card"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:layout_alignParentTop="true"
+            android:onClick="onPickUpDate"
+            android:id="@+id/start_date_day">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/calendar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="開始日期"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/imageView7"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3月3日"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/date_day1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:layout_alignParentTop="true"
+            android:onClick="onPickUpDate"
+            android:layout_marginTop="50dp"
+            android:id="@+id/end_date_day">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/calendar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="結束日期"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/imageView8"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3月5日"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/date_day2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/tags"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="時租價格"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/imageView10"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="100HKD"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/textView21" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            android:onClick="onCalculateClick" >
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/group"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="總價"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/imageView11"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="200HKD"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/price_sum_day" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="210dp"
+        android:layout_below="@+id/detail_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:id="@+id/type_month_card"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:layout_alignParentTop="true"
+            android:onClick="onPickUpDate"
+            android:id="@+id/start_date_mon">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/calendar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="開始月份"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/imageView9"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3月1日"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/date_mon_s" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:layout_alignParentTop="true"
+            android:onClick="onPickUpDate"
+            android:layout_marginTop="50dp"
+            android:id="@+id/end_date_mon">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/calendar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="結束月份"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/imageView12"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5月1日"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/date_mon_e" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/tags"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="時租價格"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/imageView13"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2500HKD"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/textView24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            android:onClick="onCalculateClick">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/group"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="總價"
+                android:gravity="center_horizontal|left"
+                android:textSize="23dp"
+                android:textColor="#70b8e2"
+                android:layout_alignLeft="@+id/imageView14"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5000HKD"
+                android:gravity="right"
+                android:textSize="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/price_sum_mon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_below="@+id/detail_title"
+        android:layout_marginTop="430dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="预定"
+            android:id="@+id/button6"
+            android:background="#70b8e2"
+            android:textColor="#ffffff"
+            android:textSize="26dp"
+            android:onClick="onBookClick" />
+    </LinearLayout>
+
+</RelativeLayout>

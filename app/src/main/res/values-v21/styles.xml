@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:timePickerDialogTheme">@style/MyDialogTheme</item>
+        <item name="android:datePickerDialogTheme">@style/MyDialogTheme</item>
+        <item name="android:alertDialogTheme">@style/MyDialogTheme</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">#70b8e2</item>
+    </style>
+
+    <style name="MySeekBarTheme" parent="android:Widget.Material.Light.SeekBar">
+        <item name="android:colorAccent">#70b8e2</item>
+    </style>
+</resources>

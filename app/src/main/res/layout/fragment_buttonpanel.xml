@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark_owner.BootomPanelFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#ffffff">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:id="@+id/tab_map"
+            android:background="@mipmap/map2"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="13dp"
+            android:onClick="onTabClick" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:id="@+id/tab_record"
+            android:background="@mipmap/message"
+            android:layout_toEndOf="@+id/tab_map"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="13dp"
+            android:onClick="onTabClick" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:id="@+id/tab_wallet"
+            android:background="@mipmap/wallet"
+            android:layout_toEndOf="@+id/tab_record"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="13dp"
+            android:onClick="onTabClick" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:id="@+id/tab_profile"
+            android:background="@mipmap/profile"
+            android:layout_alignParentEnd="false"
+            android:layout_marginLeft="60dp"
+            android:layout_toEndOf="@+id/tab_wallet"
+            android:layout_marginTop="13dp"
+            android:onClick="onTabClick" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

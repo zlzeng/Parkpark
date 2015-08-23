@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark.InputAddrActivity"
+    android:background="#c9c9c9">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#70b8e2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地區"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_arrow"
+            android:onClick="onBackClick" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定位到的位置"
+        android:layout_gravity="left"
+        android:layout_marginTop="70dp"
+        android:textColor="#70b8e2"
+        android:textSize="23dp"
+        android:layout_marginLeft="10dp" />
+
+    <FrameLayout
+        android:layout_width="351dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/rect2"
+        android:layout_marginTop="100dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/addr"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:id="@+id/editUserAddr"
+            android:layout_gravity="center|right"
+            android:background="@android:color/transparent" />
+    </FrameLayout>
+
+
+</FrameLayout>

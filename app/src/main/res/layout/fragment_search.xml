@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70b8e2">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardUseCompatPadding="true"
+        android:id="@+id/searchbarview"
+        android:layout_width="320dp"
+        android:layout_height="39dp"
+        card_view:cardCornerRadius="6dp"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="75px">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#c9c9c9"
+                android:id="@+id/editText"
+                android:text="Search"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:background="@null"
+                android:onClick="onSearchTxtClick" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10px"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/searchbarview">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/topBarButton"
+            android:onClick="onSearchBtnClick"
+            android:src="@mipmap/shape" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

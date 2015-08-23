@@ -1,0 +1,177 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark.RecordDetailActivity">
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|top"
+        android:background="#70b8e2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="紀錄詳情"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="26dp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="351dp"
+                android:layout_height="130dp"
+                android:id="@+id/rd_cell_bg"
+                android:src="@drawable/carcell"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_time"
+                android:text="15:00"
+                android:layout_gravity="center_horizontal"
+                android:textSize="19dp"
+                android:textColor="#70b8ef"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rd_cell_bg"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_width="351dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_cell_bg2"
+                android:src="@mipmap/record2"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rd_time"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_time2"
+                android:text="17:03"
+                android:layout_gravity="center_horizontal"
+                android:textSize="19dp"
+                android:textColor="#70b8ef"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rd_cell_bg2"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_width="351dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_cell_bg3"
+                android:src="@drawable/carcell"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rd_time2"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_time3"
+                android:text="17:03"
+                android:layout_gravity="center_horizontal"
+                android:textSize="19dp"
+                android:textColor="#70b8ef"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rd_cell_bg3"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_width="351dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_cell_bg4"
+                android:src="@drawable/carcell"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rd_time3"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/rd_cell_bg"
+                android:layout_marginTop="17dp"
+                android:src="@mipmap/car1"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/imageView4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:src="@mipmap/car2"
+                android:layout_alignTop="@+id/rd_cell_bg3"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/imageView5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="預定成功"
+                android:id="@+id/textView17"
+                android:layout_alignBottom="@+id/imageView4"
+                android:layout_alignEnd="@+id/rd_cell_bg"
+                android:textColor="#70b8ef"
+                android:textSize="36dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我要投訴"
+                android:id="@+id/textView29"
+                android:layout_alignBottom="@+id/imageView5"
+                android:layout_alignStart="@+id/textView17"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#70b8ef"
+                android:textSize="36dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/car"
+                android:src="@mipmap/car"
+                android:layout_alignTop="@+id/rd_cell_bg4"
+                android:layout_alignLeft="@+id/rd_cell_bg4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我要續租"
+                android:id="@+id/textView30"
+                android:layout_alignTop="@+id/rd_cell_bg4"
+                android:layout_marginRight="10dp"
+                android:layout_alignRight="@+id/rd_cell_bg4"
+                android:textColor="#70b8ef"
+                android:textSize="36dp"
+                android:layout_marginTop="50dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

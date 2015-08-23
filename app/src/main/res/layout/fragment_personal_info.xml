@@ -1,0 +1,173 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark.PersonalInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|top"
+        android:background="#70b8e2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="個人资料"
+            android:id="@+id/textView13"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="26dp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:translationZ="10dp">
+
+        <RelativeLayout
+            android:id="@+id/card_view_personInfo1"
+            android:layout_width="350dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="5dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/user_pic"
+                android:src="@mipmap/user_yc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yannic Chan"
+                android:id="@+id/user_name"
+                android:textSize="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/user_pic"
+                android:layout_marginLeft="20dp" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="350dp"
+            android:layout_height="183dp"
+            android:id="@+id/panel_btn_three"
+            android:layout_below="@+id/card_view_personInfo1"
+            android:layout_alignParentEnd="false"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="5dp"
+            android:background="#c9c9c9">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="#ffffff"
+                android:onClick="onPanelClick"
+                android:id="@+id/panel_addr">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在地"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:textSize="23dp"
+                    android:textColor="#70b8e2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HK"
+                    android:id="@+id/btn_address"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="31dp"
+                    android:textSize="21dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:id="@+id/panel_phone"
+                android:onClick="onPanelClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="聯絡電話"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:textSize="23dp"
+                    android:textColor="#70b8e2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+852 12345678"
+                    android:id="@+id/btn_phone"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="31dp"
+                    android:textSize="21dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="#ffffff"
+                android:id="@+id/panel_car"
+                android:onClick="onPanelClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="車輛認證"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:textSize="23dp"
+                    android:textColor="#70b8e2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="31dp"
+                    android:src="@drawable/forward_arrow" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <Button
+            android:layout_width="355dp"
+            android:layout_height="61dp"
+            android:text="切換到業主模式"
+            android:id="@+id/switchTo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp"
+            android:textColor="#ffffff"
+            android:textSize="23dp"
+            android:background="@drawable/panel_background"
+            android:layout_below="@+id/panel_btn_three"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</FrameLayout>

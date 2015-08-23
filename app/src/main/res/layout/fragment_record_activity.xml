@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark.RecordActivityFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|top"
+        android:background="#70b8e2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="紀錄"
+            android:id="@+id/textView12"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="26dp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="351dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="80dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/record1"
+        android:onClick="onRecordCardClick" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/element_complete"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="292dp"
+        android:layout_marginTop="80dp"
+        android:onClick="onNotificationClick" />
+
+    </RelativeLayout>
+
+</FrameLayout>

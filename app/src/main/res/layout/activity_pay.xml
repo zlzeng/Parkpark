@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:id="@+id/layout_pay"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zz.parkpark.PayActivity">
+
+    <fragment android:name="com.example.zz.parkpark.TitleFragment"
+        android:id="@+id/serchbar_pay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/infoview"
+        android:layout_width="350dp"
+        android:layout_height="119dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:elevation="3dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/pay_photo"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="23dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pay_addr"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="false"
+            android:layout_marginLeft="142dp"
+            android:textSize="23dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="219dp"
+        android:id="@+id/image_map"
+        android:src="@mipmap/mapview2"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:layout_marginTop="3dp" />
+
+    <fragment android:name="com.example.zz.parkpark.ImageButtonFragment"
+        android:id="@+id/button_bar"
+        android:layout_width="350dp"
+        android:layout_height="155dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp" />
+
+
+</LinearLayout>

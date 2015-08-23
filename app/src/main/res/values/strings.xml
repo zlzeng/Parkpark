@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Parkpark</string>
+    <string name="title_activity_maps">Parkpark_driver</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_list">ListActivity</string>
+
+    <string name="hello_world">Hello world Second Activity!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pay">PayActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_more_option">MoreOptionActivity</string>
+    <string name="title_activity_input_addr">InputAddrActivity</string>
+    <string name="title_activity_input_phone">InputPhoneActivity</string>
+    <string name="title_activity_verify_car">VerifyCarActivity</string>
+    <string name="title_activity_record_detail">RecordDetailActivity</string>
+</resources>

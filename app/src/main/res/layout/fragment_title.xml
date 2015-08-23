@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70b8e2"
+    tools:context="com.example.zz.parkpark.TitleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="16dp"
+        android:layout_height="30dp"
+        android:background="@drawable/back_arrow"
+        android:id="@+id/backArrowBtn"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="10dp"
+        android:onClick="onBackEvent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="車位預定"
+        android:id="@+id/textView11"
+        android:textColor="#ffffff"
+        android:textSize="26dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+
+
+</FrameLayout>
